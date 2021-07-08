@@ -10,14 +10,34 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:t-doc-code-helper.helloWorld"
+    "*"
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "languages": [
+      {
+        "id": "javascript",
+        "extensions": [
+          ".js"
+        ],
+        "aliases": [
+          "js",
+          "JavaScript"
+        ],
+        "firstLine": "^#!/.*\\bpython[0-9.-]*\\b",
+        "configuration": "./language/javascript.json"
+      }
+    ],
     "commands": [
       {
         "command": "t-doc-code-helper.helloWorld",
         "title": "Hello World"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
       }
     ]
   },

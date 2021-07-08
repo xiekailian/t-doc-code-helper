@@ -1,0 +1,11 @@
+{
+  "Create block comment": {
+    "scope": "javascript,typescript,string",
+    "prefix": "/*",
+    "body": ["/*", " * $1", " */"]
+  },
+  "Create block comment2": {
+    "prefix": "$",
+    "body": "\\${$1}"
+  }
+}
